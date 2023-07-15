@@ -3,10 +3,10 @@ import React from "react";
 const Form = (props) => {
   const handleChange = (event) => {
     const { name, value } = event.target;
-    props.handleChange(name, value);
+    props.change(name, value);
   };
 
-  handleSubmit = (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     props.submit();
   };
