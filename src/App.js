@@ -7,6 +7,7 @@ function App() {
 
   const onSubmit = () => {
     setMembers([values, ...members]);
+    setValues({ name: "", email: "", role: "" });
   };
 
   const onChange = (name, value) => {
